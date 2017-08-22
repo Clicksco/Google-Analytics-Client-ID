@@ -1,0 +1,22 @@
+{
+  "name": "@mae/ga_cid",
+  "version": "1.0.1",
+  "description": "google analytics client id",
+  "main": "ga_cid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clicksco/Google-Analytics-Client-ID.git"
+  },
+  "keywords": [
+    "google analytics",
+    "google analytics client id",
+    "mae"
+  ],
+  "author": "furqan <furqan@clicksco.com>",
+  "license": "ISC",
+  "readme": "README.md",
+  "dependencies": {}
+}
