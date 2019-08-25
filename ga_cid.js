@@ -4,25 +4,19 @@
 * it form javascript
 */
 function setGaCid() {
-
-    var clientId = '';
-
-    //if directly set
+    
     ga(function(tracker) {
+        var clientId = '';
+
         clientId = tracker.get('clientId');
-    });
-
-    //if not check if set with tag manager and have multiple then select first
-    if(clientId == '') {
-        ga(function(tracker) {
+        if(clientId == '') {
             clientId = ga.getAll()[0].get('clientId');
-        });
-    }
+        }
 
-
-    //set cookie to get information in server side and window object for frontend
-    document.cookie = "ga_client_id=" + clientId;
-    window.ga_client_id = clientId;
+        window.ga_client_id = clientId;
+        document.cookie = clientId;
+        console.log('ga client ' + tracker.get('clientId'));
+    });
 }
 
 /**
