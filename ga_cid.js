@@ -20,7 +20,7 @@ function setGaCid() {
     }
 
 
-    //set cookie to get information in server side code and pass as attribute
+    //set cookie to get information in server side and window object for frontend
     document.cookie = "ga_client_id=" + clientId;
     window.ga_client_id = clientId;
 }
