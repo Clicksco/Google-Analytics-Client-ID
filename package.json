@@ -1,6 +1,6 @@
 {
   "name": "@mae/ga_cid",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "google analytics client id",
   "main": "ga_cid.js",
   "scripts": {
